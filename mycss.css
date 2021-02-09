@@ -1,0 +1,15 @@
+body {
+	background-color: #cc9766;
+}
+p {
+	color: #e6e6e6;
+	font-family: Courier New;
+}
+img {
+	border: 5px solid #e6e6e6;
+	height: 310px;
+}
+li {
+	font-family: Courier New;
+	color: #e6e6e6
+}
