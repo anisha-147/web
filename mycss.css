@@ -1,5 +1,6 @@
 body {
 	background-color: #cc9766;
+	padding: 50px;
 }
 p {
 	color: #e6e6e6;
@@ -9,7 +10,56 @@ img {
 	border: 5px solid #e6e6e6;
 	height: 310px;
 }
-li {
-	font-family: Courier New;
-	color: #e6e6e6
+
+.home img{
+   width: 40%;
+    height: 40%; 
+    object-fit: contain;  
+
 }
+.home {
+	display: flex;
+  justify-content: center;
+}
+.navbar ul {
+	font-family: Courier New;
+	color: #e6e6e6;
+	list-style-type: none;
+	text-align: center;
+	background-color: #cc9766;
+	text-decoration: none;
+	
+}
+.navbar li {
+	display: inline;
+	padding-left: 30px;
+	padding-right:30px;
+	background-color: #cc9766;
+	color: #e6e6e6;
+	text-decoration: none;
+	
+}
+.navbar a:link {
+	text-decoration: none;
+	color: #e6e6e6;
+}
+.navbar a:visited{
+	color:#e6e6e6;
+}
+.navbar li a:hover {   
+			background-color: black;
+}
+
+.navbar {
+	display: inline;
+	padding: 5px;
+	border: 5px;
+	list-style-type: none;
+	
+}
+
+.booklist {
+	font-family: Courier New;
+	color: #e6e6e6;
+}
+		
