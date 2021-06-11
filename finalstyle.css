@@ -27,16 +27,11 @@ h1 {
 }
 
 h2 {
-	font: small-caps bold 30px/1 sans-serif;
-	color: maroon;
+	font: small-caps bold 20px/1 sans-serif;
+	color: #ecc19c;
+	
 }
 
-h3 {
-	font: small-caps bold 24px/1 sans-serif;
-	color: #ecc19c;
-	padding: 2px 2px;
-	margin: 10px;
-}
 
 ul {background-color: #1e847f;
 	color: #ecc19c;
