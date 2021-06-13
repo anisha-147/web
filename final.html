@@ -35,25 +35,31 @@
 <h1>  Instructions </h1>
   <div class="image-txt-container">
   
-	<p>This program is very user friendly. The program prompts you to input each of the following inputs: US state(s) two letter abbreviations, your SAT score, and your budget. It will then return a school and a summary of the school. </p>
-    </div>
+	  <p>This program is very user-friendly. The program prompts you to enter each of the following inputs: US state(s) two-letter abbreviations separated by a space, your SAT score, and your budget. It will then return a school and some helpful background information about the college, such as the city in which it is located, the student population, the average alumni salary, and a link to its website. If there are no matches for your entered criteria, the program will return an Error message. </p>
+</div>
 
 <h1> How College Matcher Works </h1>
-<p> </p>
+<p> The college information (includes everything from the SAT score range to the acceptance rate of the top 650 schools in the United States) is stored in a .csv file called “ForbesAmericasTopColleges2019.” However, not all the information was useful for our program, so we used the “.drop()” pandas feature to modify the file. We removed the ‘Undergraduate Population', 'Net Price', 'Average Grant Aid', 'ACT Lower', and 'ACT Upper' data columns. The program sends a welcome message to the user, prompting them to get 3 pieces of information ready: their SAT score, their budget, and which state(s) in which they would like to attend college. We then utilized “input” to incorporate an interactive element. The program asks the user for their 3 pieces of information. We modified our first draft of the program by adding a feature that allows the user to enter more than one state as an input. We used “.split()” to achieve this, and for that reason, the states must be separated by a space when entered into the program. We put the different states in a new list called “states.” Then, we used pandas’ data slicing capabilities to narrow down the table only the rows that met the criteria entered by the user. From there, we selected the first row in the new table, or the highest ranked college that meets the criteria. Finally, the program runs a script that gives the user their top college and some information about it. </p>
 
 <h1>Files</h1>
   <div class="flexcontainer">
     <ul>
-	<li>final.html: This html file that gives a rundown of the project</li>
+	
 	<li>Python Final Project.py: The python program that takes your inputs and returns the college match</li>
 	<li>ForbesAmericasTopColleges2019.csv: Excel spreadsheet that has data on each of the top 650 colleges in the U.S. </li>
+	<li>final.html: This html file that gives a rundown of the project</li>
+	    <li>finallocations.html: describes the significance of location in college matching</li>
+	    <li>finalprices.html: describes the significance of prices in college matching</li>
+	    <li>finalscores.html: describes the significance of SAT scores in college matching</li>
+	    <li>finalstyle.css: css styling code for all four html sites </li>
 	</ul>
   </div>
   
 <h1>Resources</h1>
   <div class="flexcontainer">
     <ul>
-	<li>College information: <a href="College information: https://www.forbes.com/top-colleges/#66f3a4c31987">https://www.forbes.com/top-colleges/#66f3a4c31987</a></li>
+	<li>College information: <a href="https://www.forbes.com/top-colleges/#66f3a4c31987">https://www.forbes.com/top-colleges/#66f3a4c31987</a></li>
+	<li>We used pandas. Pandas is a well-known data analysis tool that simplifies data wrangling by organizing information in tables called dataframes. We used it in our program because our main data was organized in the form of a .csv table, and pandas allowed us to easily convert that information into a dataframe while providing us with tools like “.drop()” and “.isin()” which enabled us to manipulate the data in a way that we could easily find the best match for the user’s criteria.</li>
 	</ul>
 
     
@@ -64,9 +70,11 @@
     
     
   <ul>
-  <li>The program will only take two letter abbreivations of states, not full state names.</li>
-  <li>The program will only return colleges from a list of  the 650 top colleges in the United States. If you do not get a college match, try adjusting your inputs. There are also a lot more amazing collrges out there that are not on our list.  </li>
-  </ul>
+  <li>The program will only take two letter abbreivations of states, not full state names and when inputted, the abbreviated state names MUST be separated by a space.</li>
+  <li>The program will only return colleges from a list of the 650 top colleges in the United States. If you do not get a college match, try adjusting your inputs. There are also a lot more amazing collrges out there that are not on our list.  </li>
+  <li>Reminder: So many more factors go into this decision than SAT score and budgets. Most colleges can offer some form of financial aid, and one test is by no means a make or break!</li>
+
+	  </ul>
 
   
      </body>
